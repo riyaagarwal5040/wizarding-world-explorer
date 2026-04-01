@@ -1,72 +1,45 @@
-# 🧙‍♂️ Wizarding World Explorer
+# Wizarding World Explorer
 
-## 📌 Project Overview
-Wizarding World Explorer is a web application designed to navigate and discover the Harry Potter universe. The platform provides a centralized interface for users to explore characters, houses, spells, movies, and books using interactive tools for searching, filtering, and sorting.
+## Project Overview
+Wizarding World Explorer is a responsive single-page web app for exploring Harry Potter characters using the Potterhead API.
 
----
+## Current Features
+- Fetches character data from the Potterhead API
+- Search characters by name, actor, or house
+- Filter characters by Hogwarts house
+- Sort characters from A-Z or Z-A
+- Responsive card-based layout for desktop, tablet, and mobile
 
-## 🎯 Purpose
-The objective of this project is to demonstrate foundational and advanced web development skills, including:
+## Tech Stack
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Fetch API
 
-- JavaScript Fundamentals: Managing application logic and state  
-- API Integration: Fetching and handling asynchronous data from external sources  
-- Dynamic UI Rendering: Creating a responsive interface that reacts to data changes  
-- Array Higher-Order Functions: Implementing map, filter, and sort for data manipulation  
+## API Reference
+The app uses the Potterhead API as its primary data source:
 
----
+- Base URL: [https://potterhead-api.vercel.app/](https://potterhead-api.vercel.app/)
+- Endpoint used:
+  - `/api/characters`
 
-## 🔗 API Reference
-This project utilizes the Potterhead API for all Harry Potter related data.
+## Run Locally
+1. Clone the repository:
 
-- API URL: https://potterhead-api.vercel.app/  
-- Endpoints: Characters, Spells, Houses, Books, and Movies  
-
----
-
-## ✨ Planned Features
-
-### 🔍 Core Functionality
-- Search: Ability to find specific characters or spells by name  
-- Filtering: Sorting by Hogwarts houses, character categories, or spell types  
-- Sorting: Organizing lists alphabetically or by chronological release dates  
-
-### 🧩 Application Sections
-- Characters: Detailed profiles featuring images and biographical data  
-- Houses Dashboard: Comprehensive data on the four Hogwarts houses  
-- Muggles and Ghosts: Specialized views for non-wizarding and spectral entities  
-- Spells: A searchable library of charms, hexes, and curses  
-- Media: Dedicated sections for books and movies  
-
----
-
-## 🛠️ Technologies Used
-- Frontend: HTML, CSS
-- Scripting: JavaScript 
-- Data Handling: Fetch API, Local Storage  
-- Version Control: Git and GitHub  
-
----
-
-## ⚙️ Project Setup
-
-### 1. Clone the Repository
+```bash
 git clone https://github.com/riyaagarwal5040/wizarding-world-explorer.git
+```
 
+2. Move into the project folder:
 
-### 2. Navigate to the Directory
-
+```bash
 cd wizarding-world-explorer
+```
 
+3. Open the project:
 
-### 3. Run the Project
-Open `index.html` in your web browser or use a local development server (such as Live Server in VS Code).
+- Open `index.html` directly in a browser, or
+- Start a local server with a tool like VS Code Live Server
 
----
-
-## 📌 Project Status
-This project is currently in the Planning Phase (Milestone 1). Implementation of core features and API integration will follow in subsequent milestones.
-
----
-
-## 🚀 Conclusion
-The Wizarding World Explorer project showcases the practical application of modern JavaScript and API integration to create a functional and user-friendly web experience.
+## Project Status
+This repository now reflects a simple Milestone 2 version of the project with straightforward `fetch()` usage and basic DOM manipulation.
