@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WizardVerse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <h1>WizardVerse</h1>
+      <p class="intro">
+        Explore magical characters with a cleaner, text-first archive built for quick searching,
+        house filtering, and sorting.
+      </p>
+
+      <div class="controls">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search characters"
+          aria-label="Search characters"
+        >
+
+        <select id="houseFilter" aria-label="Filter by house">
+          <option value="">All Houses</option>
+          <option value="Gryffindor">Gryffindor</option>
+          <option value="Slytherin">Slytherin</option>
+          <option value="Ravenclaw">Ravenclaw</option>
+          <option value="Hufflepuff">Hufflepuff</option>
+        </select>
+
+        <select id="sort" aria-label="Sort characters">
+          <option value="">Sort by</option>
+          <option value="az">A-Z</option>
+          <option value="za">Z-A</option>
+        </select>
+
+        <button id="themeToggle" class="theme-button" type="button">
+          Toggle Theme
+        </button>
+      </div>
+    </header>
+
+    <main class="content">
+      <section class="results-panel">
+        <div id="container" aria-live="polite"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
